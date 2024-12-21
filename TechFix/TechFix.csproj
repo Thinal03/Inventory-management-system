@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7800DB41-3C88-48E8-BE0F-DE57660ECC69}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TechFix</RootNamespace>
+    <AssemblyName>TechFix</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="checkBoxShowPassword\CheckedChanged.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Store Staff\Add Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store Staff\Add Supplier.Designer.cs">
+      <DependentUpon>Add Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store Staff\Order_TechFix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store Staff\Order_TechFix.Designer.cs">
+      <DependentUpon>Order_TechFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store Staff\Quotation_Req.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store Staff\Quotation_Req.Designer.cs">
+      <DependentUpon>Quotation_Req.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store Staff\StaffHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store Staff\StaffHomePage.Designer.cs">
+      <DependentUpon>StaffHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\SupplierHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\SupplierHomePage.Designer.cs">
+      <DependentUpon>SupplierHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\Supp_Quotations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\Supp_Quotations.Designer.cs">
+      <DependentUpon>Supp_Quotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\Sup_Oders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\Sup_Oders.Designer.cs">
+      <DependentUpon>Sup_Oders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\Sup_Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\Sup_Products.Designer.cs">
+      <DependentUpon>Sup_Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechFixDBDataSet.cs">
+      <DependentUpon>TechFixDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TechFixDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TechFixDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TechFixDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TechFixDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TechFixDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TechFixDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TechFixDBDataset_Sup.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TechFixDBDataset_Sup.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TechFixDBDataSet_Sup1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TechFixDBDataSet_Sup1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="User authtication\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User authtication\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User authtication\RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User authtication\RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="TechFixDBDataSet.xsc">
+      <DependentUpon>TechFixDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TechFixDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TechFixDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TechFixDBDataSet.xss">
+      <DependentUpon>TechFixDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TechFixDBDataSet1.xsc">
+      <DependentUpon>TechFixDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TechFixDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TechFixDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TechFixDBDataSet1.xss">
+      <DependentUpon>TechFixDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TechFixDBDataSet2.xsc">
+      <DependentUpon>TechFixDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TechFixDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TechFixDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TechFixDBDataSet2.xss">
+      <DependentUpon>TechFixDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TechFixDBDataset_Sup.xsc">
+      <DependentUpon>TechFixDBDataset_Sup.xsd</DependentUpon>
+    </None>
+    <None Include="TechFixDBDataset_Sup.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TechFixDBDataset_Sup.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TechFixDBDataset_Sup.xss">
+      <DependentUpon>TechFixDBDataset_Sup.xsd</DependentUpon>
+    </None>
+    <None Include="TechFixDBDataSet_Sup1.xsc">
+      <DependentUpon>TechFixDBDataSet_Sup1.xsd</DependentUpon>
+    </None>
+    <None Include="TechFixDBDataSet_Sup1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TechFixDBDataSet_Sup1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TechFixDBDataSet_Sup1.xss">
+      <DependentUpon>TechFixDBDataSet_Sup1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store Staff\Add Supplier.resx">
+      <DependentUpon>Add Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store Staff\Order_TechFix.resx">
+      <DependentUpon>Order_TechFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store Staff\Quotation_Req.resx">
+      <DependentUpon>Quotation_Req.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store Staff\StaffHomePage.resx">
+      <DependentUpon>StaffHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\SupplierHomePage.resx">
+      <DependentUpon>SupplierHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\Supp_Quotations.resx">
+      <DependentUpon>Supp_Quotations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\Sup_Oders.resx">
+      <DependentUpon>Sup_Oders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\Sup_Products.resx">
+      <DependentUpon>Sup_Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User authtication\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User authtication\RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AppData.xsc">
+      <DependentUpon>AppData.xsd</DependentUpon>
+    </None>
+    <None Include="AppData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AppData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AppData.xss">
+      <DependentUpon>AppData.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\user.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TechFixDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TechFixDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>TechFixDB.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
